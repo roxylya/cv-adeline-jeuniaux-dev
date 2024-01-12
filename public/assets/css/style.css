@@ -316,7 +316,6 @@ h3 {
 
 
 .card:hover,
-.card:after,
 .card:focus {
     background-color: #fff;
 }
