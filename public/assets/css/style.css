@@ -1,0 +1,377 @@
+/* =================================================================================================== */
+
+/* polices */
+
+body {
+    font-family: 'Electrolize', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C4CBCB;
+}
+
+a {
+    text-decoration: none;
+}
+
+.white {
+    background-color: #C4CBCB;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgb(1, 3, 2, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+.black {
+    color: #010302;
+}
+
+.green {
+    color: #0E3B30;
+}
+
+.medium {
+    font-size: 1rem;
+}
+
+.small {
+    font-size: 0.8rem;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.aboutText {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: -1px 0 0 rgb(196, 203, 203, 0.8),
+        1px 0 0 rgb(196, 203, 203, 0.8),
+        0 -1px 0 rgb(196, 203, 203, 0.8),
+        0 1px 0 rgb(196, 203, 203, 0.8);
+}
+
+/* .name{
+    font-size: 2rem;
+} */
+
+/* =================================================================================================== */
+/* scrollbar */
+
+body::-webkit-scrollbar {
+    width: 0.8rem;
+    height: 0.8rem;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #0E3B30;
+    border: 1px solid #010302;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, rgb(196, 203, 203, 1) 0%, rgb(182, 181, 179, 1) 100%);
+    /* background-color: #A97F07; */
+    /* color of the scroll thumb */
+    /* roundness of the scroll thumb */
+    border: 1px solid #0E3B30;
+    /* creates padding around scroll thumb */
+}
+
+/* =================================================================================================== */
+/* Message défilant */
+header {
+    overflow: hidden;
+}
+
+.borderBoxScrollText {
+    border-top: solid 0.2rem #C4CBCB;
+    border-bottom: solid 0.2rem #C4CBCB;
+}
+
+.scrolling-text {
+    white-space: nowrap;
+    animation: scrollText 30s linear infinite;
+}
+
+.scrolling-text:hover {
+    animation-play-state: paused;
+}
+
+h2 {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 42px #0E3B30,
+        0 0 77px #0E3B30,
+        0 0 100px #0E3B30;
+    animation: neon 1s infinite linear;
+}
+
+@keyframes neon {
+    0% {
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 42px #0E3B30,
+            0 0 77px #0E3B30,
+            0 0 100px #0E3B30;
+    }
+
+    50% {
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 32px #0E3B30,
+            0 0 87px #0E3B30,
+            0 0 120px #0E3B30;
+    }
+}
+
+
+@keyframes scrollText {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+/* =================================================================================================== */
+/* background */
+
+.home:hover,
+.home:focus {
+    border: solid 0.2rem #B6B5B3;
+    border-radius: 1rem;
+}
+
+.home:active {
+    transform: translateY(4px);
+
+}
+
+.greenBG {
+    background-color: #0E3B30;
+}
+
+.greyBG {
+    background-color: #B6B5B3;
+}
+
+.whiteBG {
+    background-color: #C4CBCB;
+}
+
+.blackBG {
+    background-color: #010302;
+}
+
+.lineNav {
+    height: 0.1rem;
+    width: 100%;
+    background-color: #010302;
+    margin-top: -2rem;
+}
+
+/* .myName {
+    background-color: #C4CBCB;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 15px 0px #000000;
+} */
+
+.arizonia {
+    font-family: 'Arizonia', cursive;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    color: #C4CBCB;
+    font-size: 4rem;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.4),
+        -1px -2px 0 rgba(255, 255, 255, 1);
+}
+
+.puzzle {
+    background-image: url("../img/fondpuzzle.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 25rem;
+    width: 100%;
+}
+
+.about {
+    background: linear-gradient(265deg, rgba(196, 203, 203, 0.378) 3%, rgba(196, 203, 203, 0.659) 8.85%, rgba(196, 203, 203, 0.74) 51.46%, rgba(196, 203, 203, 0.504) 65.43%, rgba(196, 203, 203, 0.558) 100%);
+}
+
+/* =================================================================================================== */
+/* lien */
+
+nav>div>a,
+.nav-link {
+    background-color: #C4CBCB;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgb(14, 59, 48, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* lien survolé, clické... */
+nav>div>a::after,
+nav>div>a:focus,
+nav>div>a:hover,
+.nav-link::after,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #ffffff;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgb(14, 59, 48, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* =================================================================================================== */
+/* images */
+
+/* .adeline {
+    width: 200px;
+} */
+
+.jeuniaux {
+    width: 185px;
+}
+
+
+/* =================================================================================================== */
+/* navbar */
+
+/* remplacement toggle-icon par une image */
+.navbar-toggler-icon {
+    background-image: url("../img/carte-des-hamburgers.png");
+    height: 3rem;
+    width: 3rem;
+    object-fit: contain;
+    border: none;
+}
+
+.navbar-toggler-icon:active {
+    border: none;
+}
+
+/* =================================================================================================== */
+/* Parcours */
+
+.way {
+    height: 30rem;
+}
+
+/* =================================================================================================== */
+/* media queries */
+
+@media(max-width: 600px) {
+
+    .adeline,
+    .jeuniaux {
+        width: 150px;
+    }
+
+    .aboutText {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .about {
+        background: linear-gradient(rgba(196, 203, 203, 0.922), rgba(196, 203, 203, 0.696), rgba(196, 203, 203, 0.84));
+    }
+}
+
+@media(max-width: 964px) {
+    .about {
+        background: linear-gradient(rgba(196, 203, 203, 0.922), rgba(196, 203, 203, 0.696), rgba(196, 203, 203, 0.84));
+    }
+}
+
+/* =================================================================================================== */
+/* Credits */
+
+h3 {
+    color: #C4CBCB;
+    font-size: 3rem;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.4),
+        -1px -2px 0 rgba(255, 255, 255, 1);
+}
+
+
+.card:hover,
+.card:after,
+.card:focus {
+    background-color: #fff;
+}
+
+.card:active {
+    transform: translateY(4px);
+}
+
+
+.card {
+    padding: 1rem;
+    height: 14rem;
+    margin: 0.8rem;
+    background-color: #C4CBCB;
+    box-shadow: 0px 0px 20px 0px #010302;
+}
+
+
+
+.card>img {
+    height: 5rem;
+}
+
+.card>p {
+    font-size: 1rem;
+    color: #010302;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* =================================================================================================== */
+/* Footer */
+
+footer>a {
+    background-color: #C4CBCB;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgb(14, 59, 48, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer>a:hover,
+footer>a:after,
+footer>a:focus {
+
+    background-color: #ffffff;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgb(14, 59, 48, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+    font-weight: 600;
+}
