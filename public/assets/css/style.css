@@ -158,8 +158,8 @@ h2 {
     background-color: #0E3B30;
 }
 
-.greyBG {
-    background-color: #B6B5B3;
+.grayBG {
+    background-color: #7071713e;
 }
 
 .whiteBG {
@@ -221,7 +221,7 @@ nav>div>a,
     -moz-background-clip: text;
     background-clip: text;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -239,7 +239,7 @@ nav>div>a:hover,
     -moz-background-clip: text;
     background-clip: text;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-weight: 600;
 }
 
@@ -254,7 +254,13 @@ nav>div>a:hover,
     width: 185px;
 }
 
+.icons{
+    height: 10rem;
+}
 
+.contactIcons{
+    height: 5rem;
+}
 /* =================================================================================================== */
 /* navbar */
 
@@ -373,4 +379,18 @@ footer>a:focus {
     background-clip: text;
     text-decoration: none;
     font-weight: 600;
+}
+
+
+
+/* Contact */
+
+.contact{
+    text-decoration: none;
+    color: #010302;
+}
+
+.contact:hover, .mailTo:focus{
+    text-decoration: none;
+    color: #0E3B30;
 }
