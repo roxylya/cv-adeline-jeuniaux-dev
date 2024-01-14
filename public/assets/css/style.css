@@ -9,6 +9,18 @@ body {
     background-color: #C4CBCB;
 }
 
+.wayP>p{
+    line-height: 1.2rem;
+    padding-top: 1.2rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    font-size: 1.2rem;
+    text-shadow: -1px 0 0 rgb(196, 203, 203, 0.8),
+    1px 0 0 rgb(196, 203, 203, 0.8),
+    0 -1px 0 rgb(196, 203, 203, 0.8),
+    0 1px 0 rgb(196, 203, 203, 0.8);
+}
+
 a {
     text-decoration: none;
 }
@@ -108,6 +120,9 @@ h2 {
         0 0 100px #0E3B30;
     animation: neon 1s infinite linear;
 }
+
+/* =================================================================================================== */
+/* Mediaqueries */
 
 @keyframes neon {
     0% {
@@ -394,3 +409,4 @@ footer>a:focus {
     text-decoration: none;
     color: #0E3B30;
 }
+
