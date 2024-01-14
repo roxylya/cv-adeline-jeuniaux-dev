@@ -9,16 +9,15 @@ body {
     background-color: #C4CBCB;
 }
 
-.wayP>p{
+.wayP>p {
     line-height: 1.2rem;
-    padding-top: 1.2rem;
-    padding-right: 1.2rem;
-    padding-left: 1.2rem;
+    padding: 1.2rem;
     font-size: 1.2rem;
+    margin-bottom: 0;
     text-shadow: -1px 0 0 rgb(196, 203, 203, 0.8),
-    1px 0 0 rgb(196, 203, 203, 0.8),
-    0 -1px 0 rgb(196, 203, 203, 0.8),
-    0 1px 0 rgb(196, 203, 203, 0.8);
+        1px 0 0 rgb(196, 203, 203, 0.8),
+        0 -1px 0 rgb(196, 203, 203, 0.8),
+        0 1px 0 rgb(196, 203, 203, 0.8);
 }
 
 a {
@@ -269,13 +268,14 @@ nav>div>a:hover,
     width: 185px;
 }
 
-.icons{
+.icons {
     height: 10rem;
 }
 
-.contactIcons{
+.contactIcons {
     height: 5rem;
 }
+
 /* =================================================================================================== */
 /* navbar */
 
@@ -400,13 +400,13 @@ footer>a:focus {
 
 /* Contact */
 
-.contact{
+.contact {
     text-decoration: none;
     color: #010302;
 }
 
-.contact:hover, .mailTo:focus{
+.contact:hover,
+.mailTo:focus {
     text-decoration: none;
     color: #0E3B30;
 }
-
