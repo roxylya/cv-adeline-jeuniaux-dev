@@ -19,6 +19,13 @@ body {
         0 1px 0 rgb(196, 203, 203, 0.8);
 }
 
+.skillsP {
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+
+}
+
 a {
     text-decoration: none;
 }
@@ -102,7 +109,7 @@ header {
 
 .scrolling-text {
     white-space: nowrap;
-    animation: scrollText 30s linear infinite;
+    animation: scrollText 60s linear infinite;
 }
 
 .scrolling-text:hover {
