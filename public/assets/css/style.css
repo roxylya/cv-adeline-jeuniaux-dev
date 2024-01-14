@@ -197,12 +197,6 @@ h2 {
     margin-top: -2rem;
 }
 
-/* .myName {
-    background-color: #C4CBCB;
-    border-radius: 50%;
-    box-shadow: inset 4px 4px 15px 0px #000000;
-} */
-
 .arizonia {
     font-family: 'Arizonia', cursive;
     padding-bottom: 0;
@@ -341,13 +335,11 @@ h3 {
         -1px -2px 0 rgba(255, 255, 255, 1);
 }
 
-
-.card:hover,
-.card:focus {
+.card:hover {
     background-color: #fff;
 }
 
-.card:active {
+.card:active, .card:focus {
     transform: translateY(4px);
 }
 
@@ -403,7 +395,7 @@ footer>a:focus {
 }
 
 
-
+/* =================================================================================================== */
 /* Contact */
 
 .contact {
@@ -415,4 +407,13 @@ footer>a:focus {
 .mailTo:focus {
     text-decoration: none;
     color: #0E3B30;
+}
+
+
+/* =================================================================================================== */
+/* Portfolio */
+
+.demo{
+    height: 20rem;
+    width: 35rem
 }
