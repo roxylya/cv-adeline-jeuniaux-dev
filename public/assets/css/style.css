@@ -109,7 +109,7 @@ header {
 
 .scrolling-text {
     white-space: nowrap;
-    animation: scrollText 60s linear infinite;
+    animation: scrollText 120s linear infinite;
 }
 
 .scrolling-text:hover {
@@ -123,7 +123,7 @@ h2 {
         0 0 42px #0E3B30,
         0 0 77px #0E3B30,
         0 0 100px #0E3B30;
-    animation: neon 1s infinite linear;
+    animation: neon 3s infinite linear;
 }
 
 /* =================================================================================================== */
@@ -476,7 +476,7 @@ footer>a:focus {
     font-size: 1.3rem;
     background-color: #C4CBCB;
     color: transparent;
-    text-shadow: 2px 3px 3px #010302d1, 1px 3px 3px #010302d1, 4px 2px 3px #010302d1;
+    text-shadow: 2px 3px 3px #010302d1, 1px 3px 3px #0103027f, 4px 2px 3px #01030243;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -530,4 +530,45 @@ h4 {
         0 0 6px #0E3B30,
         0 0 9px #0E3B30,
         0 0 10px #0E3B30;
+}
+
+/* animations icons */
+.animIcon {
+    animation: animIcon 2s ease 0s 5  normal forwards;
+}
+
+@keyframes animIcon {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* portfolio */
+
+.portfolio>p{
+    font-size: 1.3rem;
 }
