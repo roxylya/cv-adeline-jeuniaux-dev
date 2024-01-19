@@ -568,3 +568,11 @@ h4 {
 .portfolio>p {
     font-size: 1.3rem;
 }
+
+@media(max-width: 660px) {
+
+    .video {
+        width: 300px;
+        height: 150px;
+    }
+}
