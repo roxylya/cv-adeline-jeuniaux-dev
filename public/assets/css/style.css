@@ -495,3 +495,39 @@ h4 {
     -moz-background-clip: text;
     background-clip: text;
 }
+
+/*  bouton cv à télécharger */
+
+.button {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #C4CBCB;
+    text-shadow:
+        0 0 1px #fff,
+        0 0 3px #fff,
+        0 0 6px #0E3B30,
+        0 0 9px #0E3B30,
+        0 0 10px #0E3B30;
+}
+
+.bgButton {
+    background-color: #0E3B30;
+}
+
+.bgButton:hover,
+.bgButton:focus {
+    background-color: #010302;
+}
+
+.button:focus,
+.button:hover {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #C4CBCB;
+    text-shadow:
+        0 0 1px #fff,
+        0 0 3px #fff,
+        0 0 6px #0E3B30,
+        0 0 9px #0E3B30,
+        0 0 10px #0E3B30;
+}
